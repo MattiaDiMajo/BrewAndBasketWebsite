@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Waterbeach News — Brew & Basket</title>
+  <meta name="description" content="Waterbeach village news, local events, shop updates, and a community noticeboard for classes and announcements." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/news.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Brew<span>&amp;</span>Basket</a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catering.html">Catering</a></li>
+        <li><a href="news.html">Waterbeach News</a></li>
+        <li><a href="catering.html#book" class="nav-cta">Book Catering</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="news-hero">
+    <div class="page">
+      <span class="tag fade-up">Waterbeach News</span>
+      <h1 class="fade-up delay-1">Your village, your <em>news</em></h1>
+      <p class="fade-up delay-2">Shop updates, local events, community announcements — and a noticeboard for classes, services, and things going on in Waterbeach.</p>
+      <div class="news-tabs fade-up delay-3" id="tabs">
+        <button class="tab active" data-filter="all">All posts</button>
+        <button class="tab" data-filter="update">Shop updates</button>
+        <button class="tab" data-filter="event">Local events</button>
+        <button class="tab" data-filter="announcement">Announcements</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <div class="news-body">
+    <div class="page">
+      <div class="news-layout">
+
+        <!-- Main feed -->
+        <main class="news-feed">
+          <p class="section-label" style="margin-bottom:1.25rem">Latest posts</p>
+
+          <!-- Featured post -->
+          <article class="news-card news-featured reveal" data-cat="update">
+            <div class="news-featured-img">
+              <div class="featured-icon">☕</div>
+            </div>
+            <div class="news-card-body">
+              <div class="news-meta">
+                <span class="cat-badge cat-update">Shop update</span>
+                <span class="post-date">5 June 2026</span>
+              </div>
+              <h2>New summer menu is here — including our iced lavender latte</h2>
+              <p>We've refreshed the café menu for summer. Come in and try the iced lavender latte, the watermelon cooler, and our new focaccia toasties. Available from this Monday.</p>
+              <a href="#" class="read-more">Read more →</a>
+            </div>
+          </article>
+
+          <!-- Regular posts -->
+          <article class="news-card reveal delay-1" data-cat="event">
+            <div class="news-thumb">
+              <span>🎪</span>
+            </div>
+            <div class="news-card-body">
+              <div class="news-meta">
+                <span class="cat-badge cat-event">Local event</span>
+                <span class="post-date">1 June 2026</span>
+              </div>
+              <h3>Waterbeach Village Fete — Saturday 20 June</h3>
+              <p>The annual village fete returns to the recreation ground. Brew &amp; Basket will have a stall. Come say hello and grab a coffee!</p>
+              <a href="#" class="read-more">Read more →</a>
+            </div>
+          </article>
+
+          <article class="news-card reveal delay-1" data-cat="announcement">
+            <div class="news-thumb">
+              <span>📢</span>
+            </div>
+            <div class="news-card-body">
+              <div class="news-meta">
+                <span class="cat-badge cat-announcement">Announcement</span>
+                <span class="post-date">28 May 2026</span>
+              </div>
+              <h3>Extended Sunday hours starting this month</h3>
+              <p>By popular request, we're now open until 5pm on Sundays. Come in for that late afternoon coffee — you've earned it.</p>
+              <a href="#" class="read-more">Read more →</a>
+            </div>
+          </article>
+
+          <article class="news-card reveal" data-cat="event">
+            <div class="news-thumb">
+              <span>🌿</span>
+            </div>
+            <div class="news-card-body">
+              <div class="news-meta">
+                <span class="cat-badge cat-event">Local event</span>
+                <span class="post-date">20 May 2026</span>
+              </div>
+              <h3>Waterbeach in Bloom — volunteer gardening day</h3>
+              <p>Join us and other local volunteers on Saturday 14 June for the annual village garden tidy-up. Meet at the village green at 10am.</p>
+              <a href="#" class="read-more">Read more →</a>
+            </div>
+          </article>
+
+          <article class="news-card reveal" data-cat="update">
+            <div class="news-thumb">
+              <span>🛒</span>
+            </div>
+            <div class="news-card-body">
+              <div class="news-meta">
+                <span class="cat-badge cat-update">Shop update</span>
+                <span class="post-date">10 May 2026</span>
+              </div>
+              <h3>We now stock local honey and preserves from Fen Farm</h3>
+              <p>Pop in and pick up a jar — a lovely taste of Cambridgeshire to take home or give as a gift.</p>
+              <a href="#" class="read-more">Read more →</a>
+            </div>
+          </article>
+
+          <div class="no-results" id="noResults" style="display:none;">
+            <p>No posts in this category yet. Check back soon!</p>
+          </div>
+        </main>
+
+        <!-- Sidebar / noticeboard -->
+        <aside class="sidebar">
+
+          <div class="sidebar-section">
+            <h3 class="sidebar-title">Community noticeboard</h3>
+
+            <div class="notice-card">
+              <div class="notice-header">
+                <span class="notice-badge badge-class">Class</span>
+              </div>
+              <h4>Yoga for beginners</h4>
+              <p>Wednesday mornings 9–10am at Waterbeach Village Hall. All welcome, just bring a mat.</p>
+              <div class="notice-footer">
+                <span class="notice-contact">Sara J. · 01223 000 111</span>
+              </div>
+            </div>
+
+            <div class="notice-card">
+              <div class="notice-header">
+                <span class="notice-badge badge-event">Event</span>
+              </div>
+              <h4>Book club — June read</h4>
+              <p>We're reading "The Thursday Murder Club". Join us Thu 26 June, 7pm at the shop.</p>
+              <div class="notice-footer">
+                <span class="notice-contact">bookclub@waterbeach.org</span>
+              </div>
+            </div>
+
+            <div class="notice-card">
+              <div class="notice-header">
+                <span class="notice-badge badge-free">Free</span>
+              </div>
+              <h4>Kids' art club</h4>
+              <p>Free Saturday sessions for ages 5–12, 10–11:30am. Paints and supplies provided.</p>
+              <div class="notice-footer">
+                <span class="notice-contact">Every Saturday morning</span>
+              </div>
+            </div>
+
+            <div class="notice-card">
+              <div class="notice-header">
+                <span class="notice-badge badge-class">Class</span>
+              </div>
+              <h4>Pilates — mixed ability</h4>
+              <p>Mondays 6:30pm at the Village Hall. £8 per session, no booking needed.</p>
+              <div class="notice-footer">
+                <span class="notice-contact">Carol B. · 07700 000 222</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Submit CTA -->
+          <div class="submit-cta">
+            <h4>Got something to share?</h4>
+            <p>Running a class, event, or service in Waterbeach? Post it on the noticeboard — free and seen by the whole village.</p>
+            <a href="mailto:hello@brewandbasket.co.uk?subject=Noticeboard submission" class="btn-primary" style="display:block; text-align:center; margin-top:1rem;">Submit an announcement</a>
+          </div>
+
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Brew &amp; Basket
+          <small>Waterbeach, Cambridgeshire</small>
+        </div>
+        <p style="color:var(--tan); font-size:13px; font-weight:300; margin-top:8px; max-width:240px; line-height:1.6;">Your neighbourhood corner shop and café since 2020.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="catering.html">Catering</a></li>
+          <li><a href="news.html">Waterbeach News</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Visit us</h4>
+        <ul>
+          <li><a href="#">High Street, Waterbeach CB25</a></li>
+          <li><a href="#">Mon–Sat 7am–7pm</a></li>
+          <li><a href="#">Sun 8am–5pm</a></li>
+          <li><a href="tel:01223000000">01223 000 000</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Brew &amp; Basket. All rights reserved.</span>
+      <span>Made with ♥ in Waterbeach</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/news.js"></script>
+</body>
+</html>

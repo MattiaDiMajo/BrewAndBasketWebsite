@@ -1,0 +1,211 @@
+/* ── Hero ── */
+.hero {
+  background: var(--brown);
+  padding: 4rem 0 3.5rem;
+}
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+.hero-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  color: var(--cream);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+.hero-text h1 em {
+  color: var(--orange);
+  font-style: normal;
+}
+.hero-text p {
+  color: var(--tan);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  margin-bottom: 2rem;
+  max-width: 400px;
+}
+.hero-btns {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.hero-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(196,168,130,0.25);
+  border-radius: 16px;
+  padding: 2rem;
+}
+.hero-card-title {
+  color: var(--tan);
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(196,168,130,0.15);
+}
+.info-row:last-child { border-bottom: none; }
+.info-row .icon {
+  width: 18px;
+  height: 18px;
+  color: var(--orange);
+  flex-shrink: 0;
+}
+.info-row span {
+  color: var(--cream);
+  font-size: 14px;
+  flex: 1;
+}
+.info-row small {
+  color: var(--tan);
+  font-size: 12px;
+}
+
+/* ── Section padding ── */
+.section-pad { padding: 4rem 0; }
+
+/* ── Menu grid ── */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.menu-card {
+  background: var(--white);
+  border-radius: 14px;
+  padding: 1.4rem;
+  border: 1px solid var(--border);
+  transition: transform .2s, box-shadow .2s;
+}
+.menu-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(44,26,14,0.08);
+}
+.menu-cat {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 6px;
+}
+.menu-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  color: var(--brown);
+  margin-bottom: 6px;
+}
+.menu-card p {
+  font-size: 13px;
+  color: #888;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+.menu-price {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--orange);
+}
+
+/* ── Reviews ── */
+.reviews-section {
+  background: var(--cream);
+  padding: 4rem 0;
+}
+.reviews-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.google-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--white);
+  padding: 8px 18px;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+}
+.stars { color: #FBBC04; font-size: 16px; letter-spacing: 2px; }
+.google-badge span { font-size: 13px; color: var(--brown); font-weight: 500; }
+.google-link {
+  font-size: 12px;
+  color: var(--orange);
+  text-decoration: none;
+  font-weight: 500;
+  border-left: 1px solid var(--border);
+  padding-left: 10px;
+}
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.review-card {
+  background: var(--white);
+  border-radius: 14px;
+  padding: 1.4rem;
+  border: 1px solid var(--border);
+}
+.review-stars { color: #FBBC04; font-size: 14px; margin-bottom: 10px; }
+.review-text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 14px;
+  font-style: italic;
+}
+.reviewer { font-size: 13px; font-weight: 500; color: var(--brown); }
+.review-date { color: var(--tan); font-weight: 400; }
+
+/* ── CTA strip ── */
+.cta-strip {
+  background: var(--brown);
+  padding: 3rem 0;
+}
+.cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.cta-inner h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  color: var(--cream);
+  margin-bottom: 6px;
+}
+.cta-inner p {
+  color: var(--tan);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .menu-grid { grid-template-columns: repeat(2, 1fr); }
+  .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-text h1 { font-size: 38px; }
+  .hero-card { display: none; }
+  .menu-grid { grid-template-columns: 1fr; }
+  .reviews-grid { grid-template-columns: 1fr; }
+  .cta-inner { flex-direction: column; text-align: center; }
+}
