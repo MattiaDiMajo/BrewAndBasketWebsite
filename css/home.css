@@ -1,6 +1,8 @@
 /* ── Hero ── */
 .hero {
-  background: var(--brown);
+  background: linear-gradient(rgba(44, 26, 14, 0.78), rgba(44, 26, 14, 0.78)),
+              url('../images/hero.jpg') center/cover no-repeat;
+  background-attachment: fixed;
   padding: 4rem 0 3.5rem;
 }
 .hero-inner {
