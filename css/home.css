@@ -1,7 +1,8 @@
-p/* ── Hero ── */
+/* ── Hero ── */
 .hero {
   background: linear-gradient(rgba(44, 26, 14, 0.78), rgba(44, 26, 14, 0.78)),
-              url('../images/hero.webp') center/cover no-repeat;
+              url('../images/hero.jpg') center/cover no-repeat;
+  background-attachment: fixed;
   padding: 4rem 0 3.5rem;
 }
 .hero-inner {
@@ -197,10 +198,113 @@ p/* ── Hero ── */
   font-weight: 300;
 }
 
+/* ── Hero h1 colour fix (readable on cream background) ── */
+.hero-text h1 em {
+  color: var(--orange);
+  font-style: normal;
+}
+
+/* ── Carousel ── */
+.carousel-section {
+  background: var(--brown);
+  padding: 3.5rem 0 2.5rem;
+  overflow: hidden;
+}
+.carousel-text {
+  text-align: center;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+.carousel-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: var(--cream);
+  line-height: 1.3;
+  margin-top: 0.75rem;
+}
+.carousel-track-wrap {
+  position: relative;
+  overflow: hidden;
+  cursor: grab;
+  user-select: none;
+}
+.carousel-track-wrap:active { cursor: grabbing; }
+.carousel-track {
+  display: flex;
+  transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.carousel-slide {
+  min-width: 70%;
+  margin: 0 8px;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  background: rgba(255,255,255,0.06);
+  flex-shrink: 0;
+}
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+/* placeholder when no image uploaded yet */
+.carousel-slide:not(:has(img[src])) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--tan);
+  font-size: 13px;
+}
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(44,26,14,0.7);
+  border: 1px solid rgba(196,168,130,0.3);
+  color: var(--cream);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .2s;
+  z-index: 2;
+}
+.carousel-btn:hover { background: var(--orange); border-color: var(--orange); }
+.carousel-prev { left: 16px; }
+.carousel-next { right: 16px; }
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 1.25rem;
+  padding: 0 2rem;
+}
+.carousel-dots .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(196,168,130,0.35);
+  border: none;
+  cursor: pointer;
+  transition: background .2s, transform .2s;
+  padding: 0;
+}
+.carousel-dots .dot.active {
+  background: var(--orange);
+  transform: scale(1.3);
+}
+
 /* ── Responsive ── */
 @media (max-width: 900px) {
   .menu-grid { grid-template-columns: repeat(2, 1fr); }
   .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+  .carousel-slide { min-width: 85%; }
 }
 @media (max-width: 768px) {
   .hero-inner { grid-template-columns: 1fr; }
@@ -209,4 +313,6 @@ p/* ── Hero ── */
   .menu-grid { grid-template-columns: 1fr; }
   .reviews-grid { grid-template-columns: 1fr; }
   .cta-inner { flex-direction: column; text-align: center; }
+  .carousel-slide { min-width: 92%; }
+  .carousel-text h2 { font-size: 22px; }
 }
