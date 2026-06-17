@@ -24,47 +24,62 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="catering.html">Catering</a></li>
         <li><a href="news.html">Waterbeach News</a></li>
-        <li><a href="catering.html" class="nav-cta">Book Catering</a></li>
+        <li><a href="#book" class="nav-cta">Book Catering</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-inner page">
-      <div class="hero-text fade-up">
-        <span class="tag">Waterbeach Village</span>
-        <h1><em>Your local shop<br>&amp; café</em></h1>
-        <p>Fresh groceries, great coffee, and a warm corner to catch up. Find us in the heart of Waterbeach.</p>
-        <div class="hero-btns">
-          <a href="#menu" class="btn-primary">View Menu</a>
-          <a href="catering.html" class="btn-ghost">Book Catering</a>
-        </div>
-      </div>
-      <div class="hero-card fade-up delay-2">
-        <div class="hero-card-title">Find us</div>
-        <div class="info-row">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="icon"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
-          <span>High Street, Waterbeach, CB25</span>
-        </div>
-        <div class="info-row">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="icon"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          <span>Mon–Sat 7am–7pm</span>
-          <small>Sun 8am–5pm</small>
-        </div>
-        <div class="info-row">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="icon"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.12 2.18 2 2 0 012.1 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          <span>01223 000 000</span>
-        </div>
-        <div class="info-row">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="icon"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
-          <span>Urban Brew coffee</span>
-        </div>
-      </div>
+    <img src="images/hero.png" alt="Brew by the Lake — people enjoying a sunny day at the lakeside" class="hero-img" />
+    <div class="hero-overlay">
+      <img src="images/logo.png" alt="Urban Brew logo" class="hero-logo fade-up" />
     </div>
   </section>
 
-  <!-- MENU -->
+  <!-- TAGLINE -->
+  <div class="tagline reveal">
+    <p>One community, two places to enjoy life at the lake.</p>
+  </div>
+
+  <!-- CARDS -->
+  <section class="cards-section page">
+    <div class="biz-card reveal">
+      <div class="biz-card-header">
+        <div class="biz-card-brand">
+          <span class="biz-name-orange">Brew&amp;</span><span class="biz-name-brown">Basket</span>
+          <img src="images/logo.png" alt="Urban Brew logo" class="biz-logo" />
+        </div>
+        <ul class="biz-hours">
+          <li>Mon–Thu, Sun 9am–5pm</li>
+          <li>Fri–Sat 9am–8pm</li>
+        </ul>
+      </div>
+      <ul class="biz-features">
+        <li>Groceries, coffee shop and pub all under one roof...</li>
+        <li>Food trucks every weekend</li>
+        <li>Draft beer and cider</li>
+        <li>Delicious baguettes for the perfect lunch break</li>
+      </ul>
+    </div>
+
+    <div class="biz-card reveal delay-2">
+      <div class="biz-card-header">
+        <div class="biz-card-brand">
+          <span class="biz-name-orange">Brew</span><br>
+          <span class="biz-name-lake">By the Lake</span>
+          <img src="images/logo.png" alt="Urban Brew logo" class="biz-logo" />
+        </div>
+        <ul class="biz-hours">
+          <li>Mon–Thu, Sun 9am–5pm</li>
+          <li>Fri–Sat 9am–8pm</li>
+        </ul>
+      </div>
+      <p class="biz-desc">Experience life at the lake.<br>Join us for a bite or drink immersed in nature for a great afternoon with family.</p>
+    </div>
+  </section>
+
+  <!-- MENU HIGHLIGHTS -->
   <section id="menu" class="section-pad">
     <div class="page">
       <p class="section-label reveal">What's on offer</p>
@@ -72,30 +87,43 @@
       <div class="menu-grid">
         <div class="menu-card reveal">
           <div class="menu-cat">Café</div>
-          <h3>Iced Latte</h3>
-          <p>Icredibly enjoyable, perfect for when the sun is shining</p>
-          <div class="menu-price">£4.00</div>
+          <h3>Flat White</h3>
+          <p>Urban Brew single origin, perfectly steamed whole milk</p>
+          <div class="menu-price">£3.50</div>
         </div>
         <div class="menu-card reveal delay-1">
           <div class="menu-cat">Café</div>
-          <h3>Fruit Smoothie</h3>
-          <p>Delicious and healthy smothies, different flavours available</p>
-          <div class="menu-price">£5.00</div>
+          <h3>Iced Lavender Latte</h3>
+          <p>House lavender syrup, cold milk, double espresso</p>
+          <div class="menu-price">£4.00</div>
         </div>
         <div class="menu-card reveal delay-2">
           <div class="menu-cat">Bakery</div>
-          <h3>Chicken & Chorizo Pasty</h3>
-          <p>A worm and fragrant treat, one of our cusotmer's favourits</p>
-          <div class="menu-price">£3.89</div>
+          <h3>Almond Croissant</h3>
+          <p>Freshly baked, delivered daily from a local bakery</p>
+          <div class="menu-price">£1.59</div>
+        </div>
+        <div class="menu-card reveal delay-1">
+          <div class="menu-cat">Lunch</div>
+          <h3>Ham, Egg &amp; Chips</h3>
+          <p>A proper pub classic, served fresh every lunchtime</p>
+          <div class="menu-price">£8.00</div>
         </div>
         <div class="menu-card reveal delay-2">
-          <div class="menu-cat">Shop</div>
-          <h3>Daily essentials</h3>
-          <p>Bread, milk, fruit, veg — everything you need, locally stocked</p>
-          <div class="menu-price">From £0.60</div>
+          <div class="menu-cat">Small Plates</div>
+          <h3>Chilli Cheese Balls</h3>
+          <p>Crispy, gooey and perfectly spiced — great to share</p>
+          <div class="menu-price">£5.50</div>
         </div>
+        <div class="menu-card reveal delay-3">
+          <div class="menu-cat">Drinks</div>
+          <h3>Draft Cruzcampo</h3>
+          <p>Refreshing Spanish lager on tap — half or pint</p>
+          <div class="menu-price">From £3.49</div>
+        </div>
+      </div>
       <div style="text-align:center; margin-top:2rem;">
-        <a href="images/menu.png" target="_blank" class="btn-primary">View the full menu</a>
+        <a href="images/menu.png" target="_blank" class="btn-primary">Full Menu</a>
       </div>
     </div>
   </section>
@@ -108,29 +136,82 @@
     </div>
     <div class="carousel-track-wrap">
       <div class="carousel-track" id="carouselTrack">
-        <div class="carousel-slide">
-          <img src="images/shop1.webp" alt="Brew & Basket shop" />
-        </div>
-        <div class="carousel-slide">
-          <img src="images/shop2.webp" alt="Brew & Basket café" />
-        </div>
-        <div class="carousel-slide">
-          <img src="images/shop3.webp" alt="Brew & Basket drinks" />
-        </div>
-        <div class="carousel-slide">
-          <img src="images/shop4.webp" alt="Brew & Basket food" />
-        </div>
-        <div class="carousel-slide">
-          <img src="images/shop5.webp" alt="Brew & Basket lakeside" />
-        </div>
-        <div class="carousel-slide">
-          <img src="images/shop6.webp" alt="Brew & Basket lakeside" />
-        </div>        
+        <div class="carousel-slide"><img src="images/shop1.jpg" alt="Brew & Basket shop" /></div>
+        <div class="carousel-slide"><img src="images/shop2.jpg" alt="Brew & Basket café" /></div>
+        <div class="carousel-slide"><img src="images/shop3.jpg" alt="Brew & Basket drinks" /></div>
+        <div class="carousel-slide"><img src="images/shop4.jpg" alt="Brew & Basket food" /></div>
+        <div class="carousel-slide"><img src="images/shop5.jpg" alt="Brew & Basket lakeside" /></div>
       </div>
       <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Previous">&#8249;</button>
       <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Next">&#8250;</button>
     </div>
     <div class="carousel-dots" id="carouselDots"></div>
+  </section>
+
+  <!-- CATERING FORM -->
+  <section id="book" class="home-catering">
+    <div class="page">
+      <div class="home-catering-inner">
+        <div class="home-catering-text reveal">
+          <span class="tag">Catering</span>
+          <h2 class="section-title">We bring the feast to you</h2>
+          <p>From office lunches to village celebrations — freshly made platters, pastries, and coffee. No payment now, we'll confirm and invoice you directly.</p>
+          <ul class="catering-perks">
+            <li>🥪 Sandwich &amp; wrap platters</li>
+            <li>☕ Coffee &amp; tea flasks</li>
+            <li>🎉 Events from 10 to 80 people</li>
+            <li>🏡 Delivery or collect in Waterbeach</li>
+          </ul>
+          <a href="catering.html" class="btn-ghost" style="margin-top:1rem; display:inline-block;">See all packages →</a>
+        </div>
+        <form class="home-booking-form reveal delay-2" id="bookingForm" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="07700 000 000" required />
+            </div>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="package">Package</label>
+              <select id="package" name="package">
+                <option>Light Bites — £45</option>
+                <option selected>Full Spread — £95</option>
+                <option>Village Feast — £180</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="guests">Approx. guests</label>
+              <input type="number" id="guests" name="guests" placeholder="e.g. 25" min="5" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="date">Preferred date</label>
+            <input type="date" id="date" name="date" />
+          </div>
+          <div class="field">
+            <label for="notes">Notes or special requirements</label>
+            <textarea id="notes" name="notes" placeholder="Dietary needs, delivery address, event type…"></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%; padding:14px;">Send booking request</button>
+          <p class="form-note">We'll reply within 24 hours to confirm.</p>
+        </form>
+        <div class="form-success" id="formSuccess" style="display:none;">
+          <div class="success-icon">✓</div>
+          <h3>Request received!</h3>
+          <p>Thanks — we'll be in touch within 24 hours to confirm your booking.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- GOOGLE REVIEWS -->
@@ -167,19 +248,6 @@
     </div>
   </section>
 
-  <!-- CTA STRIP -->
-  <section class="cta-strip">
-    <div class="page">
-      <div class="cta-inner reveal">
-        <div>
-          <h2>Planning a party or event?</h2>
-          <p>We do catering for all occasions — office lunches, village events, private parties and more.</p>
-        </div>
-        <a href="catering.html" class="btn-primary">Explore catering options</a>
-      </div>
-    </div>
-  </section>
-
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-inner">
@@ -192,7 +260,10 @@
             </div>
             <p style="color:var(--tan); font-size:13px; font-weight:300; margin-top:8px; max-width:240px; line-height:1.6;">Your neighbourhood corner shop and café since 2025.</p>
             <div class="footer-social">
-              <a href="https://www.instagram.com/urbanbrew2025/" target="_blank" rel="noopener" aria-label="Instagram">
+              <a href="https://facebook.com/brewandbasket" target="_blank" rel="noopener" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+              </a>
+              <a href="https://instagram.com/brewandbasket" target="_blank" rel="noopener" aria-label="Instagram">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
               </a>
             </div>
@@ -224,5 +295,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/calendar.js"></script>
 </body>
 </html>
